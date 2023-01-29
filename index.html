@@ -11,13 +11,13 @@
 
 <body class="font-Poppins">
     <!-- Background Hompage -->
-    <div class="bg-backgroundPrimary h-screen80">
+    <div class="bg-backgroundPrimary h-auto">
         <!-- Navbar -->
         <nav class="relative container mx-auto">
             <!-- Flex Item -->
             <div class="flex items-center justify-between pt-4">
                 <!-- Logo -->
-                <div class="pt-2">
+                <div class="p-5 md:pt-2">
                     <img src="./img/logo.png" alt="Logo">
                 </div>
                 <!-- Menu Item -->
@@ -28,7 +28,7 @@
                     <a href="#" class="text-lg hover:text-gray-400">Project</a>
                 </div>
                 <div class="">
-                    <button class="hidden md:block bg-black text-white px-5 py-3 text-sm"><a href="#">CONTACT
+                    <button class="hidden md:block bg-black text-white px-5 py-3 text-sm hover:bg-gray-500"><a href="#">CONTACT
                             US</a></button>
                 </div>
 
@@ -37,29 +37,44 @@
         <!-- Hero Section -->
         <section id="hero">
             <!-- Flex Container -->
-            <div class="container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+            <div
+                class="container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 md:mt-24 space-y-0 md:space-y-0">
                 <!-- Left Item -->
-                <div class="flex flex-col mb-32 space-y-8 md:w-1/2">
+                <div class="flex flex-col mb-7 md:mb-32 space-y-8 md:w-1/2">
                     <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">Solving Modern
                         Problem through
                         design</h1>
                     <p class="max-w-md mt-4 text-gray-500 text-sm text-center md:text-left">Lorem Ipsum is simply dummy
                         text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the </p>
-                    <div class="text-center md:text-left"> <button class="bg-secondry text-white  px-5 py-3 ">
-                            <a href="#">Hire Me</a></button></div>
+                    <div class="text-center md:text-left">
+                        <button class="bg-secondry text-white px-5 py-3 hover:bg-indigo-400"><a href="#">Hire Me</a></button>
+                    </div>
                 </div>
                 <!-- Image Item -->
                 <div class="md:w-1/2 ">
-                    <img class="max-w-sm md:max-w-xl" src="./img/person.png" alt="Person">
-                  
-
+                    <img class="w-10/12 xl:w-auto h-auto md:max-w-xl" src="./img/person.png" alt="Person">
                 </div>
-
-
             </div>
         </section>
     </div>
+    <!-- Recent Work -->
+    <section id="recent-work">
+        <div
+            class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 md:mt-24 space-y-0 md:space-y-0">
+            <!-- title -->
+            <div class="w-1/2 flex items-center">
+                <div class="bg-gray-800 w-16 h-1"></div><span class="text-2xl md:text-3xl pl-2 text-secondry">My Recent Work</span>
+            </div>
+            <!-- personal property -->
+            <div class=" w-1/2 flex space-x-10">
+                <div class="flex flex-col"><span class="text-2xl">100+</span><span class="text-gray-500 text-sm">Project Complete</span></div>
+                <div class="flex flex-col"><span class="text-2xl">50+</span><span class="text-gray-500 text-sm">Project Complete</span></div>
+                <div class="flex flex-col"><span class="text-2xl">30+</span><span class="text-gray-500 text-sm">Project Complete</span></div>
+                <div class="flex flex-col"><span class="text-2xl">98.6+</span><span class="text-gray-500 text-sm">Project Complete</span></div>
+            </div>
+        </div>
+    </section>
 
 
 </body>
