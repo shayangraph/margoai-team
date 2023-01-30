@@ -9,7 +9,8 @@ module.exports = {
         backgroundPrimary: "#FFF9E7",
       },
       spacing: {
-        screen80: "80vh",
+        p450:'450px',
+        p400:'400',
       },
       fontFamily: {
         Poppins: ["Poppins"],
