@@ -9,7 +9,7 @@ module.exports = {
         backgroundPrimary: "#FFF9E7",
       },
       spacing: {
-        p350:'350px',
+        p350:'320px',
         p200:'200',
       },
       fontFamily: {
