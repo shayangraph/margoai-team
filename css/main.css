@@ -557,17 +557,18 @@ video {
   grid-column: span 2 / span 2;
 }
 
-.m-5{
-  margin: 1.25rem;
-}
-
-.m-10{
-  margin: 2.5rem;
+.m-3{
+  margin: 0.75rem;
 }
 
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .ml-5{
@@ -610,8 +611,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .flex{
@@ -658,6 +663,10 @@ video {
   height: 4rem;
 }
 
+.h-4{
+  height: 1rem;
+}
+
 .w-10\/12{
   width: 83.333333%;
 }
@@ -688,6 +697,10 @@ video {
 
 .w-32{
   width: 8rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-lg{
@@ -850,6 +863,10 @@ video {
   padding: 2.5rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -870,6 +887,11 @@ video {
   padding-right: 3.5rem;
 }
 
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
@@ -888,6 +910,18 @@ video {
 
 .pl-5{
   padding-left: 1.25rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
+}
+
+.pb-1{
+  padding-bottom: 0.25rem;
 }
 
 .text-center{
@@ -931,6 +965,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -1033,6 +1072,10 @@ video {
 
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
   }
 
   .md\:space-x-7 > :not([hidden]) ~ :not([hidden]){
