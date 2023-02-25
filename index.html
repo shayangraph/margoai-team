@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Margoia Team</title>
 </head>
 
@@ -13,27 +15,25 @@
     <!-- Background Hompage -->
     <div class="bg-backgroundPrimary">
         <!-- Navbar -->
-        <nav class="relative container mx-auto">
-            <!-- Flex Item -->
-            <div class="flex items-center justify-between pt-4">
-                <!-- Logo -->
-                <div class="ml-5 md:pt-2">
+        <nav class="p-5 md:flex md:justify-between md:items-center container mx-auto">
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-Poppins cursor-pointer">
                     <img src="./img/logo.png" alt="Logo">
-                </div>
-                <!-- Menu Item -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-lg hover:text-gray-400">Home</a>
-                    <a href="#" class="text-lg hover:text-gray-400">About Me</a>
-                    <a href="#" class="text-lg hover:text-gray-400">Service</a>
-                    <a href="#" class="text-lg hover:text-gray-400">Project</a>
-                </div>
-                <div class="">
-                    <button class="hidden md:block bg-black text-white px-5 py-3 text-sm hover:bg-gray-500 mr-5"><a
-                            href="#">CONTACT
-                            US</a></button>
-                </div>
-
+                </span>
+                <span class="text-3xl cursor-pointer md:hidden block mx-2">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
             </div>
+            <ul
+                class="md:flex md:items-center z[-1] md:z-auto md:static absolute bg-backgroundPrimary w-full md:w-auto left-0 md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0"><a href="#" class=" hover:text-gray-500 duration-500">Home</a></li>
+                <li class="mx-4 my-6 md:my-0"><a href="#" class=" hover:text-gray-500 duration-500">About Me</a></li>
+                <li class="mx-4 my-6 md:my-0"><a href="#" class=" hover:text-gray-500 duration-500">Service</a></li>
+                <li class="mx-4 my-6 md:my-0"><a href="#" class=" hover:text-gray-500 duration-500">Project</a></li>
+                <button class="bg-black text-white  px-5 py-3 text-sm  hover:bg-gray-800 mx-4 rounded duration-500"><a
+                        href="#">CONTACT
+                        US</a></button>
+            </ul>
         </nav>
         <!-- Hero Section -->
         <section id="hero">
@@ -72,7 +72,7 @@
                     Work</span>
             </div>
             <!-- personal property -->
-            <div class="flex space-x-5 md:space-x-7 justify-center md:justify-start xl:pl-5 ">
+            <div class="flex space-x-5 md:space-x-7 justify-center md:justify-start pl-2 xl:pl-5 ">
                 <div class="flex flex-col"><span class="text-lg md:text-2xl">100+</span><span
                         class="text-gray-500 text-xs md:text-sm">Project
                         Complete</span></div>
@@ -182,24 +182,26 @@
     <!-- Meet Client -->
     <section id="meet-client">
         <div class="bg-backgroundPrimary mt-10">
-            <div class="container mx-auto flex flex-col md:flex-row items-center ">
+            <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 items-center">
                 <!-- Title meet client -->
-                <div class="p-10">
+                <div class="p-10 col-span-1 md:col-span-2 xl:col-span-1">
                     <h1
                         class="text-2xl max-w-xs md:text-3xl font-bold text-secondry border-b-4 md:border-l-4 md:border-b-0 border-gray-800 pl-3">
                         Meet My
                         Recent Client</h1>
                 </div>
                 <!-- Title meet client -->
-                <div class="p-10 grid xl:grid-cols-4 gap-4 items-center">
-                    <div class="w-64 h-20 bg-white rounded-lg flex items-center justify-center"><img
-                            class="w-auto h-20 p-2" src="./img/logo-branding.png" alt="logo-branding"></div>
-                    <div class="w-64 h-20 bg-white rounded-lg flex items-center justify-center"><img
-                            class="w-auto h-20 p-2" src="./img/logo-branding.png" alt="logo-branding"></div>
-                    <div class="w-64 h-20 bg-white rounded-lg flex items-center justify-center"><img
-                            class="w-auto h-20 p-2" src="./img/logo-branding.png" alt="logo-branding"></div>
-                    <div class="w-64 h-20 bg-white rounded-lg flex items-center justify-center"><img
-                            class="w-auto h-20 p-2" src="./img/logo-branding.png" alt="logo-branding"></div>
+                <div
+                    class="p-5 grid md:grid-cols-2 xl:grid-cols-4 gap-4 justify-center col-span-1 md:col-span-2 xl:col-span-3">
+                    <div class="h-20 bg-white rounded-lg flex items-center justify-center"><img class="h-20 inline p-2"
+                            src="./img/logo-branding.png" alt="logo-branding"></div>
+                    <div class="h-20 bg-white rounded-lg flex items-center justify-center"><img class="h-20 inline p-2"
+                            src="./img/logo-branding.png" alt="logo-branding"></div>
+                    <div class="h-20 bg-white rounded-lg flex items-center justify-center"><img class="h-20 inline p-2"
+                            src="./img/logo-branding.png" alt="logo-branding"></div>
+                    <div class="h-20 bg-white rounded-lg flex items-center justify-center"><img class="h-20 inline p-2"
+                            src="./img/logo-branding.png" alt="logo-branding"></div>
+
                 </div>
             </div>
         </div>
@@ -213,11 +215,11 @@
                 world</p>
         </div>
         <!-- Client Say -->
-        <div class="container mx-auto grid xl:grid-cols-3 gap-20 p-2 mt-10">
+        <div class="container mx-auto grid xl:grid-cols-3 gap-20 p-5 md:p-10 mt-10">
             <!-- Client Item -->
             <div class="bg-backgroundPrimary flex flex-col space-y-4 items-center">
                 <!-- Profile -->
-                <img class="w-32 h-32 rounded-full -mt-14" src="./img/person-profile.jpg" alt="profile">
+                <img class="w-28 h-28 rounded-full -mt-14" src="./img/person-profile.jpg" alt="profile">
                 <!-- description -->
                 <div class="text-center">
                     <h2 class="text-lg">emile wale</h2>
@@ -234,7 +236,7 @@
             <!-- Client Item -->
             <div class="bg-backgroundPrimary flex flex-col space-y-4 items-center">
                 <!-- Profile -->
-                <img class="w-32 h-32 rounded-full -mt-14" src="./img/person-profile.jpg" alt="profile">
+                <img class="w-28 h-28 rounded-full -mt-14" src="./img/person-profile.jpg" alt="profile">
                 <!-- description -->
                 <div class="text-center">
                     <h2 class="text-lg">emile wale</h2>
@@ -251,7 +253,7 @@
             <!-- Client Item -->
             <div class="bg-backgroundPrimary flex flex-col space-y-4 items-center">
                 <!-- Profile -->
-                <img class="w-32 h-32 rounded-full -mt-14" src="./img/person-profile.jpg" alt="profile">
+                <img class="w-28 h-28 rounded-full -mt-14" src="./img/person-profile.jpg" alt="profile">
                 <!-- description -->
                 <div class="text-center">
                     <h2 class="text-lg">emile wale</h2>
@@ -332,6 +334,12 @@
             </div>
         </div>
     </section>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul')
+            e.name == 'menu' ? (e.name = 'close', list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = 'menu', list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
 </body>
 
 </html>
